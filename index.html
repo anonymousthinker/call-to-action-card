@@ -3,20 +3,66 @@
   <head>
     <title>call to action card</title>
   </head>
+  <style>
+    .action-card {
+      width: 400px;
+      height: 300px;
+      padding: 40px;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    .heading {
+      margin: 0px;
+      font-family: sans-serif;
+      font-size: 37px;
+      font-weight: 200;
+      color: rgba(0, 0, 0, 0.6);
+    }
+    .heading ~ div {
+      padding-top: 5px;
+      border-bottom: 1px solid black;
+      width: 60px;
+      height: 10px;
+    }
+    .description {
+      font-family: sans-serif;
+      font-size: 17px;
+      font-weight: 100;
+      color: rgba(0, 0, 0, 0.5);
+      letter-spacing: 1px;
+      padding-bottom: 5px;
+    }
+    .try-button {
+      border: 1px solid rgb(80, 133, 219);
+      border-radius: 30px;
+      text-align: center;
+      background-color: rgb(80, 133, 219);
+    }
+    .try-button p {
+      margin: 6px;
+      text-transform: uppercase;
+      color: white;
+      font-family: sans-serif;
+    }
+    .action-card-footer {
+      color: rgba(0, 0, 0, 0.4);
+      padding-top: 18px;
+      font-family: sans-serif;
+      font-size: 14px;
+      line-height: 18px;
+    }
+  </style>
   <body>
     <aside class="action-card">
       <header>
-        <h2>Build your first chatbot in 10 minutes!</h2>
-        <div>
-          <hr />
-        </div>
+        <h2 class="heading">Build your first chatbot in 10 minutes!</h2>
+        <div></div>
       </header>
       <p class="description">
         Have a bot answering questions from customers on your website within 10
         minutes of signing up for ChatBot.
       </p>
       <div class="try-button">
-        <p>TRY NOW</p>
+        <p>TRY NOW →</p>
       </div>
       <footer class="action-card-footer">
         By clicking try now you create an account and agree to our Terms and
